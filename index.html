@@ -1,0 +1,456 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons//ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    <style>
+        body {
+            background: url(img/bg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: "DJB About a Boy";
+            font-size: 25px;
+            line-height: 23px;
+        }
+        
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            height: 100%;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        dd {
+            font-size: 20px;
+        }
+        
+        dt {
+            font-weight: 150;
+        }
+        
+        dt,
+        dd {
+            line-height: 1;
+        }
+        
+        a {
+            color: #9b0404;
+        }
+        
+        a:hover {
+            color: #190303;
+            text-decoration: none;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+     
+            font-weight: normal;
+            font-family: "DeathRattle";
+            margin-bottom: 15px;
+        }
+        
+            h1,h3
+       {
+            color: #9b0404;
+           
+        }
+        
+        em {
+            font-family: "DeathRattle";
+            color: #9b0404;
+        }
+        
+        b {
+            font-size: 30px;
+            font-weight: 150;
+            color: #9b0404;
+        }
+        
+        .page {
+            top: 10%;
+            bottom: 10%;
+            background-image: url(img/paper.jpg);
+            background-repeat: repeat;
+            -moz-box-shadow: 0 0 55px #572c09, inset 0 0 55px #572c09;
+            -webkit-box-shadow: 0 0 55px #572c09, inset 0 0 55px #572c09;
+            box-shadow: 0 0 55px #572c09, inset 0 0 55px #572c09;
+            padding: 70px;
+        }
+        
+        @font-face {
+            font-family: "DeathRattle";
+            src: url("fonts/deathrattlebb_reg.ttf");
+        }
+        
+        @font-face {
+            font-family: "DJB About a Boy";
+            src: url("fonts/DJB About a Boy.ttf");
+        }
+        /** TAPE **/
+        
+        .taped-up a.connect {
+            font-weight: normal;
+            font-family: "DeathRattle";
+            font-size: 35px;
+            animation: glow 1s infinite alternate;
+        }
+        
+        @keyframes glow {
+            to {
+                text-shadow: 0 0 10px #9b0404;
+            }
+        }
+        
+        .taped-up a:hover.connect {
+            font-weight: normal;
+            font-family: "DeathRattle";
+            font-size: 35px;
+        }
+        
+        .taped-up a.ts {
+            font-weight: normal;
+            color: black;
+            font-family: "DeathRattle";
+            font-size: 35px;
+        }
+        
+        .taped-up h3 {
+            margin: 0;
+            color: black;
+        }
+        
+        .taped-up {
+            display: inline-block;
+            /* displays element as an inline element similar to <span> */
+            padding: 15px;
+            /* size of the white border */
+            margin: 25px;
+            /* position image with other page elements */
+            /* give the border's background color a gradient */
+            /* depending on the colors you give you can make it look new or old and faded */
+            background: #F5EEE1;
+            /*default color for browsers that don't support gradients*/
+            background: -webkit-linear-gradient(left top, #F5EEE1, #FAFAF9);
+            /* For Safari */
+            background: -o-linear-gradient(bottom right, #F5EEE1, #FAFAF9);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, #F5EEE1, #FAFAF9);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom right, #F5EEE1, #FAFAF9);
+            /* Standard syntax (should be last) */
+            /* give the image a drop shadow */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+            /* give the image a slight rotation for a realistic effect */
+            -ms-transform: rotate(6deg);
+            /* IE 9 */
+            -webkit-transform: rotate(6deg);
+            /* Safari and Chrome */
+            transform: rotate(6deg);
+            /* Standard syntax (should be last) */
+            /* Cleans up the jagged edges caused by the rotation a bit */
+            -webkit-backface-visibility: hidden;
+            /* Chrome and Safari */
+            -moz-backface-visibility: hidden;
+            /* Firefox */
+            -ms-backface-visibility: hidden;
+            /* Internet Explorer */
+            backface-visibility: hidden;
+            /* Standard syntax (should be last) */
+            position: relative;
+            /* lets us later position the tape relative to the box */
+        }
+        
+        .taped-up:before {
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            width: 105px;
+            height: 30px;
+            -webkit-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            -moz-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            -o-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            -ms-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            background: rgba(0, 0, 0, 0.1);
+            background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)), color-stop(0.1, rgba(0, 0, 0, 0.2)));
+            background: -moz-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -ms-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -o-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            border-left: dashed 1px rgba(0, 0, 0, 0.1);
+            border-right: dashed 1px rgba(0, 0, 0, 0.1);
+            bottom: 0;
+            content: '';
+            position: absolute;
+            right: 0;
+        }
+        
+        .taped-up:after {
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            width: 110px;
+            height: 30px;
+            -webkit-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            -moz-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            -o-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            -ms-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            background: rgba(0, 0, 0, 0.1);
+            background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)), color-stop(0.1, rgba(0, 0, 0, 0.2)));
+            background: -moz-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -ms-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -o-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            border-left: dashed 1px rgba(0, 0, 0, 0.1);
+            border-right: dashed 1px rgba(0, 0, 0, 0.1);
+            content: '';
+            position: absolute;
+        }
+        
+        .taped-up:before {
+            content: '';
+            /* create an empty psuedo element */
+            position: absolute;
+            /* positions the tape relative to the box created above rather than the whole page */
+            background-color: rgba(255, 255, 255, 0.4);
+            /* using rgba for the color lets us make the tape transparent */
+            height: 26px;
+            /* height of the tape */
+            /* using :before places the tape on the left of the div */
+            left: 100px;
+            /* position from the left edge of the .taped-up div edge */
+            top: -14px;
+            /* position from the top edge of the .taped-up div edge */
+            width: 95px;
+            /* width of the tape */
+            /*rotate the tape 5 degrees counter-clockwise*/
+            -ms-transform: rotate(-5deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-5deg);
+            /* Safari and Chrome */
+            transform: rotate(-5deg);
+            /* Standard syntax (should be last) */
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            /* give the tape a slight drop shadow */
+            /* giving the tape an almost transparent dotted border on the right and left gives it a nicely perforated-look at the edges */
+            border-style: dotted;
+            border-color: rgba(0, 0, 0, 0.1);
+            border-width: 0 2px;
+            /* border only on right and left sides */
+        }
+        
+        li:before {
+            content: "x ";
+            font-family: "DeathRattle";
+            color: black;
+        }
+        /** TAPE **/
+
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-72230956-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+
+
+    <div class="container page">
+        <!--  -->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/ark.png">
+                <p>You do not speak german? This page only shows how awesome our server is ;-)</p>
+            </div>
+            <h1>ARK Imperium Server</h1>
+            <div class="col-md-6">
+                <p>Schnelleres leveln, schnelles tame und keine Langeweile mit <em>40x</em> Loot und <em>20x</em> Taming. Hier ist das Zuhause vom Imperium Tribe bekannt durch YouTube.</p>
+                <p>Wir stellen euch auch die Moeglichkeit TS3 zu nutzen.</p>
+                <p>Momentan sind <b id="server_player"></b> Spieler unterwegs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Server-Einstellungen</h3>
+
+                <dl class="dl-horizontal">
+                    <dt>Ark Data </dt>
+                    <dd>Download ausgeschaltet</dd>
+                    <dt>Tageszyklus</dt>
+                    <dd>45 min Tag / 15 Min Nacht</dd>
+                    <dt>View</dt>
+                    <dd> 1st und 3rd Person-View</dd>
+                    <dt>Fadenkreuz</dt>
+                    <dd>deaktiviert</dd>
+                </dl>
+                
+                <p>Da der Server Mods verwendet kann es sein, dass du einen Timeout nack dem klicken auf den Link "verbinden" erhälst. Dann sind noch nicht alle Mods auf deinem System. Stelle bitte sicher, dass du alle geladen hast. Der Server vewendet kein Passwort.</p>
+
+
+            </div>
+
+
+
+            <div class="col-md-6">
+
+                <!-- TAPE -->
+
+                <div class="taped-up">
+                    <h3>Server - Info <span id="server_status" class="label label-success pull-right">online</span></h3>
+                    <dl class="dl-horizontal">
+                        <dt>ip :</dt>
+                        <dd>134.255.235.59</dd>
+                        <dt>port :</dt>
+                        <dd>20046</dd>
+                        <dt>Temperament :</dt>
+                        <dd>PvPvE</dd>
+                        <dt>Species :</dt>
+                        <dd>Shigo Islands</dd>
+                    </dl>
+                    <div class=" pull-right">
+                        <a class="connect " href="steam://connect/134.255.235.59:20046" role="button">verbinden</a> /
+                        <a class="ts " href="ts3server://imperium.4np.de" role="button">TS3</a>
+                    </div>
+                </div>
+                <!-- TAPE -->
+
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="taped-up" style="width:60%; height:80%;">
+                    <img src="img/map.jpg" style="width:100%; height:100%;">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>verwendete Mods</h3>
+                <p>Alle verwendeten Mods sind getestet! Wir freuen uns auf Hinweise über neue tolle Mods.</p>
+                <ul class="list-unstyled">
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=590665112">custom warmap</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=519998112">Small Dragons</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=525507438">K9 Custom Stacks Size</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=506506101">Better Beacons</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=546048361">ShigoIslands</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=534838287">Industrial Grinder</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=547099024">Pimp My Rex</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=511168000">MANY NEW ITEMS</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=495889006">Additional Armor Sets</a></li>
+                    <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=520879363">Stairs Mod</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10">
+                <h3>Spieler</h3>
+                <p>Du willst wissen, wer sich hier auf dem Server herumtreibt. Hier gibt eine eine aktuelle Liste.</p>
+                <table class="table" id="server_players">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Spielzeit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-md-10">
+                <h2>Zuruecklehnen und trotzdem Action erleben? Wir werden bald auf YouTube ein paar Videos veröffentlichen.</h2>
+            </div>
+        </div>
+
+  <div class="row">
+            <div class="col-md-10">
+                <h3>Links</h3>
+                <a href="http://arkforum.de" title="ARK Forum - Deutsches ARK Survival Evolved Forum">
+                    <img src="http://arkforum.de/bilder/logo-durchsichtig.png" style="width:300px;" alt="ARK Forum - Deutsches ARK Survival Evolved Forum" />
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+
+    </script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/ark.js"></script>
+
+
+
+</body>
+
+</html>
