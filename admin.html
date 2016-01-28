@@ -94,7 +94,7 @@
     </script>
     <script>
     function isNumber(obj) { return !isNaN(parseFloat(obj)) }    
-        
+    String.prototype.replaceAll = function(search, replacement) {var target = this; return target.replace(new RegExp(search, 'g'), replacement); };
 $.getJSON( "data/ark.json", function( ark ) {
     // items
     var $table = $('<table/>');
@@ -108,9 +108,9 @@ $.getJSON( "data/ark.json", function( ark ) {
         $tr.append('<td>' + item.name + '</td>');
 
         if(isNumber(item.blueprint)){
-            $tr.append('<td><code>admincheat GiveItemNum ' + item.blueprint + ' 1 1 false</code></td>');
+            $tr.append('<td><code>admincheat GiveItemNum ' + item.blueprint.replaceAll(' ','') + ' 1 1 false</code></td>');
         }else{
-            $tr.append('<td><code>admincheat GiveItem ' + item.blueprint + ' 1 1 false</code></td>');
+            $tr.append('<td><code>admincheat GiveItem ' + item.blueprint.replaceAll(' ','') + ' 1 1 false</code></td>');
         }
 
         
@@ -127,7 +127,7 @@ $.getJSON( "data/ark.json", function( ark ) {
     $.each(ark.dinos,function(idx,item){
         $tr = $('<tr/>');
         $tr.append('<td>' + item.name + '</td>');
-        $tr.append('<td><code>admincheat spawndino ' + item.blueprint + '  1 1 1 100</code></td>');
+        $tr.append('<td><code style="wrap:no-wrap;">admincheat spawndino ' + item.blueprint.replaceAll(' ','') + '  1 1 1 100</code></td>');
         $table.append($tr);
     })
     $('#ark_dinos').append($table);
