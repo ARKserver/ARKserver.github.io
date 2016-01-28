@@ -2,12 +2,262 @@
 
 /* ==========================================================================
    Author's custom styles
+   Copyright by LiviusTonks, 2016
    ========================================================================== */
 
 
 
-
-
+        body {
+            background: url(../img/bg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: "DJB About a Boy";
+            font-size: 25px;
+            line-height: 23px;
+        }
+        
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            height: 100%;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        dd {
+            font-size: 20px;
+        }
+        
+        dt {
+            font-weight: 150;
+        }
+        
+        dt,
+        dd {
+            line-height: 1;
+        }
+        
+        a {
+            color: #9b0404;
+        }
+        
+        a:hover {
+            color: #190303;
+            text-decoration: none;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+     
+            font-weight: normal;
+            font-family: "DeathRattle";
+            margin-bottom: 15px;
+        }
+        
+            h1,h3
+       {
+            color: #9b0404;
+           
+        }
+        
+        em {
+            font-family: "DeathRattle";
+            color: #9b0404;
+        }
+        
+        b {
+            font-size: 30px;
+            font-weight: 150;
+            color: #9b0404;
+        }
+        
+        .page {
+            top: 10%;
+            bottom: 10%;
+            background-image: url(../img/paper.jpg);
+            background-repeat: repeat;
+            -moz-box-shadow: 0 0 55px #572c09, inset 0 0 55px #572c09;
+            -webkit-box-shadow: 0 0 55px #572c09, inset 0 0 55px #572c09;
+            box-shadow: 0 0 55px #572c09, inset 0 0 55px #572c09;
+            padding: 70px;
+        }
+        
+        @font-face {
+            font-family: "DeathRattle";
+            src: url("../fonts/deathrattlebb_reg.ttf");
+        }
+        
+        @font-face {
+            font-family: "DJB About a Boy";
+            src: url("../fonts/DJB About a Boy.ttf");
+        }
+        /** TAPE **/
+        
+        .taped-up a.connect {
+            font-weight: normal;
+            font-family: "DeathRattle";
+            font-size: 35px;
+            animation: glow 1s infinite alternate;
+        }
+        
+        @keyframes glow {
+            to {
+                text-shadow: 0 0 10px #9b0404;
+            }
+        }
+        
+        .taped-up a:hover.connect {
+            font-weight: normal;
+            font-family: "DeathRattle";
+            font-size: 35px;
+        }
+        
+        .taped-up a.ts {
+            font-weight: normal;
+            color: black;
+            font-family: "DeathRattle";
+            font-size: 35px;
+        }
+        
+        .taped-up h3 {
+            margin: 0;
+            color: black;
+        }
+        
+        .taped-up {
+            display: inline-block;
+            /* displays element as an inline element similar to <span> */
+            padding: 15px;
+            /* size of the white border */
+            margin: 25px;
+            /* position image with other page elements */
+            /* give the border's background color a gradient */
+            /* depending on the colors you give you can make it look new or old and faded */
+            background: #F5EEE1;
+            /*default color for browsers that don't support gradients*/
+            background: -webkit-linear-gradient(left top, #F5EEE1, #FAFAF9);
+            /* For Safari */
+            background: -o-linear-gradient(bottom right, #F5EEE1, #FAFAF9);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, #F5EEE1, #FAFAF9);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom right, #F5EEE1, #FAFAF9);
+            /* Standard syntax (should be last) */
+            /* give the image a drop shadow */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+            /* give the image a slight rotation for a realistic effect */
+            -ms-transform: rotate(6deg);
+            /* IE 9 */
+            -webkit-transform: rotate(6deg);
+            /* Safari and Chrome */
+            transform: rotate(6deg);
+            /* Standard syntax (should be last) */
+            /* Cleans up the jagged edges caused by the rotation a bit */
+            -webkit-backface-visibility: hidden;
+            /* Chrome and Safari */
+            -moz-backface-visibility: hidden;
+            /* Firefox */
+            -ms-backface-visibility: hidden;
+            /* Internet Explorer */
+            backface-visibility: hidden;
+            /* Standard syntax (should be last) */
+            position: relative;
+            /* lets us later position the tape relative to the box */
+        }
+        
+        .taped-up:before {
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            width: 105px;
+            height: 30px;
+            -webkit-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            -moz-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            -o-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            -ms-transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            transform: translate(44px, -10px) skew(0deg) rotate(-45deg);
+            background: rgba(0, 0, 0, 0.1);
+            background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)), color-stop(0.1, rgba(0, 0, 0, 0.2)));
+            background: -moz-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -ms-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -o-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            border-left: dashed 1px rgba(0, 0, 0, 0.1);
+            border-right: dashed 1px rgba(0, 0, 0, 0.1);
+            bottom: 0;
+            content: '';
+            position: absolute;
+            right: 0;
+        }
+        
+        .taped-up:after {
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+            width: 110px;
+            height: 30px;
+            -webkit-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            -moz-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            -o-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            -ms-transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            transform: translate(-44px, 10px) skew(0deg) rotate(-45deg);
+            background: rgba(0, 0, 0, 0.1);
+            background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)), color-stop(0.1, rgba(0, 0, 0, 0.2)));
+            background: -moz-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -ms-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: -o-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            background: linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
+            border-left: dashed 1px rgba(0, 0, 0, 0.1);
+            border-right: dashed 1px rgba(0, 0, 0, 0.1);
+            content: '';
+            position: absolute;
+        }
+        
+        .taped-up:before {
+            content: '';
+            /* create an empty psuedo element */
+            position: absolute;
+            /* positions the tape relative to the box created above rather than the whole page */
+            background-color: rgba(255, 255, 255, 0.4);
+            /* using rgba for the color lets us make the tape transparent */
+            height: 26px;
+            /* height of the tape */
+            /* using :before places the tape on the left of the div */
+            left: 100px;
+            /* position from the left edge of the .taped-up div edge */
+            top: -14px;
+            /* position from the top edge of the .taped-up div edge */
+            width: 95px;
+            /* width of the tape */
+            /*rotate the tape 5 degrees counter-clockwise*/
+            -ms-transform: rotate(-5deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-5deg);
+            /* Safari and Chrome */
+            transform: rotate(-5deg);
+            /* Standard syntax (should be last) */
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            /* give the tape a slight drop shadow */
+            /* giving the tape an almost transparent dotted border on the right and left gives it a nicely perforated-look at the edges */
+            border-style: dotted;
+            border-color: rgba(0, 0, 0, 0.1);
+            border-width: 0 2px;
+            /* border only on right and left sides */
+        }
+        
+        li:before {
+            content: "x ";
+            font-family: "DeathRattle";
+            color: black;
+        }
+        /** TAPE **/
 
 
 
