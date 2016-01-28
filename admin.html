@@ -7,6 +7,7 @@
 <!--<![endif]-->
     
 <!-- Copyright by LiviusTonks, 2016 -->
+<!-- Do NOT steal this code -->
 
 <head>
     <meta charset="utf-8">
@@ -107,6 +108,7 @@ $.getJSON( "data/ark.json", function( ark ) {
         $tr = $('<tr/>');
         $tr.append('<td>' + item.name + '</td>');
 
+        // some are number, some are not
         if(isNumber(item.blueprint)){
             $tr.append('<td><code>admincheat GiveItemNum ' + item.blueprint.replaceAll(' ','') + ' 1 1 false</code></td>');
         }else{

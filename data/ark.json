@@ -524,6 +524,18 @@
     {"blueprint": "\"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Shields/PrimalItemArmor_WoodShield.PrimalItemArmor_WoodShield'\"","name": "Wooden Shield"},
     {"blueprint": "\"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Wooden/PrimalItemStructure_Furniture_WoodTable.PrimalItemStructure_Furniture_WoodTable'\"","name": "Wooden Table"},
     {"blueprint": "\"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Christmas/PrimalItemStructure_Wreath.PrimalItemStructure_Wreath'\"","name": "Wreath"},
+
+    {"blueprint": "\"Blueprint'/Game/Mods/IndustrialGrinder/PrimalItemStructure_IndustrialGrinder.PrimalItemStructure_IndustrialGrinder'\"","name": "IndustrialGrinder"},
+    {"blueprint": "\"Blueprint'/Game/Mods/Spyscope/PrimalItemWeaponAttachment_SpyScope.PrimalItemWeaponAttachment_SpyScope'\"","name": "SpyScope"},
+
+    {"blueprint": "\"Blueprint'/Game/Mods/GenericMod/PrimalItemArmor_ChitinCamoGloves.PrimalItemArmor_ChitinCamoGloves'", "name":"ChitinCamoGloves"},
+    {"blueprint": "\"Blueprint'/Game/Mods/GenericMod/PrimalItemArmor_ChitinCamoBoots.PrimalItemArmor_ChitinCamoBoots'", "name":"ChitinCamoBoots"},
+    {"blueprint": "\"Blueprint'/Game/Mods/GenericMod/PrimalItemArmor_ChitinCamoHelmet.PrimalItemArmor_ChitinCamoHelmet'", "name":"ChitinCamoHelmet"},
+    {"blueprint": "\"Blueprint'/Game/Mods/GenericMod/PrimalItemArmor_ChitinCamoShirt.PrimalItemArmor_ChitinCamoShirt'", "name":"ChitinCamoShirt"},
+    {"blueprint": "\"Blueprint'/Game/Mods/GenericMod/PrimalItemArmor_ChitinCamoPants.PrimalItemArmor_ChitinCamoPants'", "name":"ChitinCamoPants"},
+    {"blueprint": "\"Blueprint'/Game/Mods/GenericMod/PrimalItemArmor_StarHelmet.PrimalItemArmor_StarHelmet'", "name":"StarHelmet"},
+    {"blueprint": "\"Blueprint'/Game/Mods/GenericMod/RotASkins/sw/scout/PrimalItemArmor_ScoutswHelmet.PrimalItemArmor_ScoutswHelmet'", "name":"ScoutswHelmet"},
+
     {"name": "DB SHOTGUN", "blueprint": "\"Blueprint'/Game/Mods/century/PrimalItem_DBShotgun.PrimalItem_DBShotgun'\""},
     {"name": "DUNG BALL", "blueprint": "\"Blueprint'/Game/Mods/century/PrimalItem_WeaponCrap.PrimalItem_WeaponCrap'\""},
     {"name": "FLARE GUN", "blueprint": "\"Blueprint'/Game/Mods/century/PrimalItem_WeaponFlarer.PrimalItem_WeaponFlarer'\""},
