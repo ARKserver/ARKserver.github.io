@@ -93,7 +93,7 @@
 
     </script>
     <script>
-        
+    function isNumber(obj) { return !isNaN(parseFloat(obj)) }    
         
 $.getJSON( "data/ark.json", function( ark ) {
     // items
@@ -106,7 +106,14 @@ $.getJSON( "data/ark.json", function( ark ) {
     $.each(ark.items,function(idx,item){
         $tr = $('<tr/>');
         $tr.append('<td>' + item.name + '</td>');
-        $tr.append('<td><code>admincheat GiveItemNum ' + item.blueprint + ' 1 1 false</code></td>');
+
+        if(isNumber(item.blueprint)){
+            $tr.append('<td><code>admincheat GiveItemNum ' + item.blueprint + ' 1 1 false</code></td>');
+        }else{
+            $tr.append('<td><code>admincheat GiveItem ' + item.blueprint + ' 1 1 false</code></td>');
+        }
+
+        
         $table.append($tr);
     })
     $('#ark_items').append($table);
