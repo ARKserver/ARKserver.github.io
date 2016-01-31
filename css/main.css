@@ -106,6 +106,12 @@
             font-size: 35px;
             animation: glow 1s infinite alternate;
         }
+ a.youtube {
+            font-weight: normal;
+            font-family: "DeathRattle";
+            font-size: 35px;
+
+        }
         
         @keyframes glow {
             to {
@@ -113,7 +119,7 @@
             }
         }
         
-        .taped-up a:hover.connect {
+        .taped-up a:hover.connect , a.youtube{
             font-weight: normal;
             font-family: "DeathRattle";
             font-size: 35px;
