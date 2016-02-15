@@ -1,4 +1,4 @@
-var API = 'https://api.ark.bar/server/134.255.235.59/20046';
+var API = 'https://api.ark.bar/server/84.200.37.181/21016';
 var SERVER = [];
 
 $(document).ready(function () {
