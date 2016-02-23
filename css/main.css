@@ -268,8 +268,26 @@
 .flash{color: red;}
 
 
+textarea {
+    border: none;
+    background-color: transparent;
+
+    outline: none;
+}
+textarea{
+    font-family: monospace !important; font-size: 10px; width:100%;
+resize: none;
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #C7254E;
+    background-color: #F9F2F4;
+    border-radius: 4px;
+line-height: 12px !important;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace; 
 
 
+font-size: 10px;
+}
 
 
 

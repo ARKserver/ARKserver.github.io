@@ -75,9 +75,30 @@
             <div class="col-md-6">
                 <p>Hier findest du alle wichtigen admin Befehle. Das Server-Admin-Menu erhälst du mit:</p>
                 <pre>ShowMyAdminManager</pre>
+                <p>Spectator-mode</p>
+                <table class="table">
+                <tr>
+                    <td><textarea rows="1" style="height:13px;padding:0;">cheat enablespectator</textarea></td></tr><tr>
+                    <td><textarea rows="1" style="height:13px;padding:0;">cheat disablespectator</textarea></td>
+                    
+                    </tr>
+                     <tr>
+                    <td><code>Ctrl-M</code> Namen ausschalten</td>
+                    </tr>
+                     <tr>
+                    <td><code>Ctrl-N</code> Spieler auswaehlen</td>
+                    </tr>
+                    <tr>
+                    <td><code>Leertaste</code> Spieler entmounten</td>
+                    </tr>
+                </table>
+                
+                
             </div>
         </div>
         <div class="row">
+        <h2>Event</h2>
+        <textarea rows="6">admincheat GiveItemNum 22 4 0 false | admincheat GiveItemNum 23 4 0 false | admincheat GiveItemNum 24 4 0 false | admincheat GiveItemNum 25 4 0 false | admincheat GiveItemNum 26 4 0 false | admincheat GiveItemNum 140 4 0 false | admincheat GiveItemNum 435 1 0 false | admincheat GiveItemNum 434 4 0 false | admincheat GiveItemNum 1 3 0 false | admincheat GiveItemNum 4 50 0 false | admincheat GiveItemNum 4 50 0 false | admincheat GiveItemNum 4 50 0 false |  admincheat GiveItemNum 132 1 0 false  | admincheat GiveItemNum 144 50 0 false | admincheat GiveItemNum 283 1 0 false  | admincheat GiveItemNum 41 3 0 false | admincheat GiveItemNum 41 3 0 false | admincheat GiveItemNum 41 2 0 false | admincheat GiveItemNum 119 100 1 false | admincheat GiveItemNum 119 100 1 false | admincheat GiveItemNum 119 100 1 false | admincheat GiveItemNum 119 100 1 false | admincheat GiveItemNum 14 20 1 false | admincheat GiveItemNum 14 20 1 false | admincheat GiveItemNum 14 20 1 false | admincheat GiveItemNum 14 20 1 false   | admincheat GiveItemNum 58 80 0 false</textarea>
         <h2>Items</h2>
         <div id="ark_items"></div>
         <h2>Dinos</h2>
@@ -101,7 +122,7 @@ $.getJSON( "data/ark.json", function( ark ) {
     var $table = $('<table/>');
     $table.addClass('table ');
     $tr = $('<tr/>');
-    $tr.append('<th>Name</th>');
+    $tr.append('<th style="width:2%; line-height:12px !important;">Name</th>');
     $tr.append('<th>Cheat</th>');
     $table.append($tr);
     $.each(ark.items,function(idx,item){
@@ -110,9 +131,9 @@ $.getJSON( "data/ark.json", function( ark ) {
 
         // some are number, some are not
         if(isNumber(item.blueprint)){
-            $tr.append('<td><code>admincheat GiveItemNum ' + item.blueprint.replaceAll(' ','') + ' 1 1 false</code></td>');
+            $tr.append('<td><textarea rows="1" style="height:13px;padding:0;">admincheat GiveItemNum ' + item.blueprint.replaceAll(' ','') + ' 1 0 false</textarea></td>');
         }else{
-            $tr.append('<td><code>admincheat GiveItem ' + item.blueprint.replaceAll(' ','') + ' 1 1 false</code></td>');
+            $tr.append('<td><textarea rows="1" style="height:13px;padding:0;">admincheat GiveItem ' + item.blueprint.replaceAll(' ','') + ' 1 0 false</textarea></td>');
         }
 
         
@@ -123,13 +144,13 @@ $.getJSON( "data/ark.json", function( ark ) {
     var $table = $('<table/>');
     $table.addClass('table ');
     $tr = $('<tr/>');
-    $tr.append('<th>Name</th>');
+    $tr.append('<th style="width:2%;">Name</th>');
     $tr.append('<th>Cheat</th>');
     $table.append($tr);
     $.each(ark.dinos,function(idx,item){
         $tr = $('<tr/>');
         $tr.append('<td>' + item.name + '</td>');
-        $tr.append('<td><code style="wrap:no-wrap;">admincheat spawndino ' + item.blueprint.replaceAll(' ','') + '  1 1 1 100</code></td>');
+        $tr.append('<td><textarea rows="1" style="height:13px;padding:0;">admincheat spawndino ' + item.blueprint.replaceAll(' ','') + '  1 1 1 100</textarea></td>');
         $table.append($tr);
     })
     $('#ark_dinos').append($table);
@@ -137,7 +158,7 @@ $.getJSON( "data/ark.json", function( ark ) {
     var $table = $('<table/>');
     $table.addClass('table ');
     $tr = $('<tr/>');
-    $tr.append('<th>Cheat</th>');
+    $tr.append('<th style="width:2%;">Cheat</th>');
     $tr.append('<th>Beschreibung</th>');
     $table.append($tr);
     $.each(ark.commands,function(idx,item){
