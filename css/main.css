@@ -289,7 +289,14 @@ line-height: 12px !important;
 font-size: 10px;
 }
 
-
+.avatar {
+	width: 88px;
+	height: 88px;
+	border-radius: 44px;
+	-webkit-border-radius: 44px;
+	-moz-border-radius: 44px;
+	background: url(../img/avatar.png) no-repeat;
+	}
 
 
 
