@@ -60,14 +60,19 @@
 
 
     <div class="container page">
-      <!-- 
-        <div class="row">
-        
+     <div class="row">
             <div class="col-md-12">
-               
-                 <h1>Event!</h1>We will start a Dodo-Army-Event at  <span style="color:#9b0404"> 05.03.2016 about 20:00</span>. Each tribe can bring as many Dodos as they can. These dodos will fight until one dodo survives. The winner-tribe will get again a reward as usual. Since some players might play on another server too (as we do). The event will be eventually shifted to 03.03.2016 about 20:00. <a href="https://www.youtube.com/watch?v=wuZLPEuOEdE">Info-Video</a>
+             <h1>Dodo-Event in <span id="clock" class="clock"></span></h1>
+                <dl class="dl-horizontal">
+                    <dt>when?</dt>
+                    <dd id="event_date"></dd>
+                    <dt>what?</dt>
+                    <dd>Tame as many Dodos as you can. The will fight in the arena.</dd>
+                    <dt>price?</dt>
+                    <dd> MasterCraft blue-print of your choice</dd>
+                </dl>
             </div>
-        </div> -->
+        </div>
         <div class="row">
             <div class="col-md-6" style="text-align:center;">
                 <img src="img/ark.png"> <a href="index.html"><img src="img/german-icon.png" /></a>
@@ -144,42 +149,49 @@
             <div class="col-md-6">
                 <h3>used Mods</h3>
                 <p>All employed mods are tested! We look forward to get indications if there are some new interstings mods we should test. Just write a message to the the admin.</p>
-                <ul class="list-unstyled">
+                <p>You find the mod collection here: <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=638498486">Steam-Collection</a></p>
+               <!-- <ul class="list-unstyled">
                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=590665112">custom warmap</a></li>
                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=525507438">K9 Custom Stacks Size</a></li>
                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=506506101">Better Beacons</a></li>
                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=546048361">ShigoIslands</a></li>
                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=534838287">Industrial Grinder</a></li>
                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=547099024">Pimp My Rex</a></li>
-                    <!-- <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=511168000">Many New Items</a></li> -->
+                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=511168000">Many New Items</a></li>
                     <li><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=520879363">Stairs Mod</a></li>
-                </ul>
+                </ul>-->
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <h3>Server-Rules</h3>
-                <p>In addition to the following rules, we expect a respectful and friendly dealing with each other</p><p>During the event we do not llow any raid!tipp for tribes: place a Pulmonoscorpius (aggressive) in your base to get a tribe log entry.</p>
+                <p>In addition to the following rules, we expect a respectful and friendly dealing with each other</p>
 
                 <dl>
+                    <dt>Protection and activity</dt>
+                    <dd>If somebody attacked you successfully, you have to place a white flag on the top of your roof. Then nobody is allowed to attack you in the next 3 days. </dd>
+                    <dt>Event</dt>
+                    <dd>During the event we do not llow any raid!</dd>
                     <dt>Fairplay</dt>
                     <dd>Exploitation of game-bugs or any other type to get an unfair advantage are prohibited.
                        Please communicate friendly in the chat. Sexual innuendo or 
 racist content will have a ban as a consequence. We are open to german and english text in the chat. Please take consideration for new players. We would like to keep them, not to drive out them!</dd>
-                    <dt>advertising and Chat</dt>
-                    <dd>Each try of advertisement or woo away of our brave survivors to other game server has consequences. Writing when using the capslock is prohibited. We reserve, to invite you to modify your name.</dd>
+                    
                 </dl>
                 <p>It is everyday life doing one raid per tribe per day. But there should be at least days between this and another raid of the same tribe. Individual solutions for those of you who cannot wait to hit each other are possible.</p>
             </div>
             <div class="col-md-6">
                 <h3>&nbsp;</h3>
                 <dl>
+                    <dt>advertising and Chat</dt>
+                    <dd>Each try of advertisement or woo away of our brave survivors to other game server has consequences. Writing when using the capslock is prohibited. We reserve, to invite you to modify your name.</dd>
                     <dt>Raids</dt>
                     <dd>Extensive raids oder harassments by attacks, to take away the fun for others are not allowed. Everybody should enjoy this game!
                         <ul class="list-unstyled">
                             <li>Killing passive dinos is allowed, but is frowned upon.</li>
                             <li>Griefing, ie. permanent raids or botherings are not allowed, too.</li>
                         </ul>
+                        tipp for tribes: place a Pulmonoscorpius (aggressive) in your base to get a tribe log entry.
                     </dd>
                     
                     <dt>rules when building</dt>
@@ -229,6 +241,17 @@ racist content will have a ban as a consequence. We are open to german and engli
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
 
+    </script>
+    <script src="js/vendor/jquery.countdown.min.js"></script>
+    <script>
+        var event_data = '2016/03/19 16:00:00';
+        $('#clock').countdown(event_data, function(event) {
+            
+            $(this).html(event.strftime('%D days %H hours %M minutes %S seconds'));
+        });
+
+
+        $('#event_date').html(event_data);
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

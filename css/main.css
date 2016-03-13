@@ -66,6 +66,7 @@
             color: #9b0404;
            
         }
+
         
         em {
             font-family: "DeathRattle";
@@ -136,7 +137,41 @@
             margin: 0;
             color: black;
         }
-        
+        .taped {
+            display: inline-block;
+            /* displays element as an inline element similar to <span> */
+            padding: 15px;
+            /* size of the white border */
+            margin: 25px;
+            /* position image with other page elements */
+            /* give the border's background color a gradient */
+            /* depending on the colors you give you can make it look new or old and faded */
+            background: #F5EEE1;
+            /*default color for browsers that don't support gradients*/
+            background: -webkit-linear-gradient(left top, #F5EEE1, #FAFAF9);
+            /* For Safari */
+            background: -o-linear-gradient(bottom right, #F5EEE1, #FAFAF9);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, #F5EEE1, #FAFAF9);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom right, #F5EEE1, #FAFAF9);
+            /* Standard syntax (should be last) */
+            /* give the image a drop shadow */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+            /* give the image a slight rotation for a realistic effect */
+            /* Standard syntax (should be last) */
+            /* Cleans up the jagged edges caused by the rotation a bit */
+            -webkit-backface-visibility: hidden;
+            /* Chrome and Safari */
+            -moz-backface-visibility: hidden;
+            /* Firefox */
+            -ms-backface-visibility: hidden;
+            /* Internet Explorer */
+            backface-visibility: hidden;
+            /* Standard syntax (should be last) */
+            position: relative;
+            /* lets us later position the tape relative to the box */
+        }
         .taped-up {
             display: inline-block;
             /* displays element as an inline element similar to <span> */
@@ -299,6 +334,7 @@ font-size: 10px;
 	}
 
 
+.clock{color:black;}
 
 
 
