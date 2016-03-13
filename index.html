@@ -253,7 +253,13 @@
             $(this).html(event.strftime('%D Tagen %H Stunden %M Minuten %S Sekunden'));
         });
 
-       
+        var y = event_data.slice(0, 4);
+        var m = event_data.slice(5, 7);
+        var d = event_data.slice(8, 10);
+        var h = event_data.slice(11, 13);
+        var mi = event_data.slice(14, 16);
+
+        $('#event_date').html(d + "." + m + "." + y + ", " + h + ":" + mi);
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
