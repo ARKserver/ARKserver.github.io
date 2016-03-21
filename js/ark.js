@@ -1,4 +1,4 @@
-var API = 'https://api.ark.bar/server/84.200.37.181/21016';
+var API = 'http://apiquery.xyz/ark/';
 var SERVER = [];
 
 $(document).ready(function () {
@@ -26,26 +26,26 @@ function showData() {
         $('#server_status').addClass("label-danger");
     }
 
-    $('#server_name').val(SERVER.server.name);
-    $('#server_map').html(SERVER.server.map);
-    $('#server_time').html(SERVER.server.time + ' Uhr');
-    $('#server_player').html(SERVER.server.playerCount );
+    $('#server_name').val(SERVER.server.HostName);
+    $('#server_map').html(SERVER.server.Map);
+    $('#server_time').html(SERVER.rules.DayTime_s + ' Uhr');
+    $('#server_player').html(SERVER.server.Players );
 
-    var pl = SERVER.server.playerCount / SERVER.server.playerMax * 100.0;
+    var pl = SERVER.server.Players / SERVER.server.MaxPlayers * 100.0;
     $('#server_playerstat').css('width', pl + '%').attr('aria-valuenow', pl);
     $('#server_playerstat').css('min-width','2em');
-    $('#server_player_max').html('maximal '+SERVER.server.playerMax+' Spieler');
+    $('#server_player_max').html('maximal '+SERVER.server.MaxPlayers+' Spieler');
 
 
     var pos = 1;
     $("#server_players > tbody").html("");
-    $.each(SERVER.server.players, function (index, value) {
+    $.each(SERVER.players, function (index, value) {
 
         $("#server_players").find('tbody')
             .append($('<tr>')
                 .append($('<td>').text(pos))
-                .append($('<td>').text(value.name))
-                .append($('<td>').text(value.humanTime))
+                .append($('<td>').text(value.Name))
+                .append($('<td>').text(value.TimeF))
             );
 
         pos++;
