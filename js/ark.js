@@ -39,6 +39,34 @@ function showData() {
 
     var pos = 1;
     $("#server_players > tbody").html("");
+
+    if(!jQuery.isEmptyObject(SERVER.event)){
+
+        var event_data = SERVER.event.date;
+        
+        $('#event_row').show();
+        $('#clock').countdown(event_data, function(event) {
+            $(this).html(event.strftime('%D Tagen %H Stunden %M Minuten %S Sekunden'));
+            if (event.elapsed) {
+                $('#event_row').hide();
+            }
+        });
+
+        var y = event_data.slice(0, 4);
+        var m = event_data.slice(5, 7);
+        var d = event_data.slice(8, 10);
+        var h = event_data.slice(11, 13);
+        var mi = event_data.slice(14, 16);
+
+        $('#event_date').html(d + "." + m + "." + y + ", " + h + ":" + mi);
+        $('#event_type').html(SERVER.event.type);
+        $('#event_price').html(SERVER.event.price);
+        $('#event_info_de').html(SERVER.event.de);
+        $('#event_info_en').html(SERVER.event.en);
+
+
+    }
+
     $.each(SERVER.players, function (index, value) {
 
         $("#server_players").find('tbody')
@@ -52,3 +80,4 @@ function showData() {
     });
 
 }
+
