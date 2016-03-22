@@ -61,17 +61,20 @@
 <body>
     <div class="container page">
 
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row" id="event_row" style="display: none">
              <h1>Dodo-Event in <span id="clock" class="clock"></span></h1>
+            <div class="col-md-6">
                 <dl class="dl-horizontal">
                     <dt>Wann?</dt>
                     <dd id="event_date"></dd>
                     <dt>Was?</dt>
-                    <dd>Zuechtet so viele Dodos ihr koennt.  Diese treten dann in der Arena gegeneinander an.</dd>
+                    <dd id="event_type">Zuechtet so viele Dodos ihr koennt.  Diese treten dann in der Arena gegeneinander an.</dd>
                     <dt>Gewinn?</dt>
-                    <dd> MasterCraft Blueprint eurer Wahl</dd>
+                    <dd id="event_price"> MasterCraft Blueprint eurer Wahl</dd>
                 </dl>
+            </div>
+            <div class="col-md-6">
+             <p id="event_info_de"></p>
             </div>
         </div>
         <div class="row">
@@ -246,20 +249,7 @@
 
     </script>
     <script src="js/vendor/jquery.countdown.min.js"></script>
-    <script>
-        var event_data = '2016/03/21 16:00:00';
-        $('#clock').countdown(event_data, function(event) {
-            $(this).html(event.strftime('%D Tagen %H Stunden %M Minuten %S Sekunden'));
-        });
 
-        var y = event_data.slice(0, 4);
-        var m = event_data.slice(5, 7);
-        var d = event_data.slice(8, 10);
-        var h = event_data.slice(11, 13);
-        var mi = event_data.slice(14, 16);
-
-        $('#event_date').html(d + "." + m + "." + y + ", " + h + ":" + mi);
-    </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/ark.js"></script>
