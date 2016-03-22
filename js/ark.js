@@ -46,7 +46,7 @@ function showData() {
         
         $('#event_row').show();
         $('#clock').countdown(event_data, function(event) {
-            $(this).html(event.strftime('%D Tagen %H Stunden %M Minuten %S Sekunden'));
+            $(this).html(event.strftime('%D d %H h %M min %S sec'));
             if (event.elapsed) {
                 $('#event_row').hide();
             }
