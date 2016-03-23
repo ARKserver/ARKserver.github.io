@@ -25,20 +25,23 @@ function showData() {
         $('#server_status').removeClass("label-success");
         $('#server_status').addClass("label-danger");
     }
+    if(!jQuery.isEmptyObject(SERVER.server)){
+        $('#server_name').val(SERVER.server.HostName);
+        $('#server_map').html(SERVER.server.Map);
+        $('#server_time').html(SERVER.rules.DayTime_s + ' Uhr');
+        $('#server_player').html(SERVER.server.Players );
 
-    $('#server_name').val(SERVER.server.HostName);
-    $('#server_map').html(SERVER.server.Map);
-    $('#server_time').html(SERVER.rules.DayTime_s + ' Uhr');
-    $('#server_player').html(SERVER.server.Players );
+        var pl = SERVER.server.Players / SERVER.server.MaxPlayers * 100.0;
+        $('#server_playerstat').css('width', pl + '%').attr('aria-valuenow', pl);
+        $('#server_playerstat').css('min-width','2em');
+        $('#server_player_max').html('maximal '+SERVER.server.MaxPlayers+' Spieler');
 
-    var pl = SERVER.server.Players / SERVER.server.MaxPlayers * 100.0;
-    $('#server_playerstat').css('width', pl + '%').attr('aria-valuenow', pl);
-    $('#server_playerstat').css('min-width','2em');
-    $('#server_player_max').html('maximal '+SERVER.server.MaxPlayers+' Spieler');
+        var pos = 1;
+        $("#server_players > tbody").html("");
+    }
+    
 
-
-    var pos = 1;
-    $("#server_players > tbody").html("");
+   
 
     if(!jQuery.isEmptyObject(SERVER.event)){
 
